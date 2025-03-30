@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan dan Penjualan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Aplikasi Persediaan dan Penjualan</h1>
+
+    <!-- Form untuk menambah produk -->
+    <section>
+        <h2>Tambah Produk</h2>
+        <input type="text" id="productName" placeholder="Nama Produk">
+        <input type="number" id="productStock" placeholder="Stok">
+        <button onclick="addProduct()">Tambah</button>
+    </section>
+
+    <!-- Daftar persediaan -->
+    <section>
+        <h2>Daftar Persediaan</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Stok</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="inventoryList">
+                <!-- Produk akan ditampilkan di sini -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
